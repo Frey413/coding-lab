@@ -4,16 +4,16 @@ class animal {
     public breed;
 
     constructor(boible) {
-        console.log("was born")
-        this.size = "2 lbs"
-        this.breed = boible
+        this.breed = boible;
+        console.log(this.breed + " was born");
+        this.size = "2 lbs";
     }
 
-    public dye(farbe: string) {
-        this.color = farbe
+    public dye(dyeColor: string) {
+        this.color = dyeColor;
     }
     public see() {
-        return this.color
+        return this.color;
     }
 }
 
@@ -23,9 +23,10 @@ class dog extends animal {
     }
 }
 
-let pidgeon: animal = new animal("african")
-
-console.log(pidgeon.see())
+let pidgeon: animal = new animal("african");
+let otherPidgeon: animal = new animal("european");
+console.log(pidgeon);
+console.log(otherPidgeon);
 
 let doogle: dog = new dog("terrier");
 console.log(doogle);
